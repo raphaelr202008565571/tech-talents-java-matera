@@ -35,11 +35,11 @@
 
 ## 3° Semana - POO (Programação orientada a objetos) PT-2
 - Herança
-- Reescrita de métodos (sobrecarga e sobreposição)
+- Reescrita de métodos (Sobrecarga e sobreposição)
 - Classes e métodos abstratos
 - Interface
 - Polimorfismo
-- Projeto Prático - Banco(Contas bancárias)
+- Projeto Prático - Banco (Contas bancárias)
 
 ## 4° Semana - Banco de Dados e SQL
 - O que é SQL e seus usos
