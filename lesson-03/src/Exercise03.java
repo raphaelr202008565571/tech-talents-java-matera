@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+ *Escreva um algoritmo em Java que leia dois
+ * números inteiros e determine qual é o menor.
+ * Escreva um algoritmo que determina o maior também.
+ */
+
 public class Exercise03 {
 
     public static void main(String args[])
