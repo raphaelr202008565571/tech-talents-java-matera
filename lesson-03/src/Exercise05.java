@@ -16,137 +16,40 @@ public class Exercise05 {
 
         Scanner in = new Scanner(System.in);
 
-        int somaDosValores = 0;
+        System.out.println("Digite a operação que deseja fazer (a, s, m, d)");
+        String operacao = in.next();
 
-        System.out.println("Informe o 1 num");
-        int valor = in.nextInt();
+        System.out.println("Digite o primeiro valor");
+        int valor1 = in.nextInt();
 
-        int menorValor = valor;
-        int maiorValor = valor;
+        System.out.println("Digite o segundo valor");
+        int valor2 = in.nextInt();
 
-        somaDosValores += valor;
-
-        System.out.println("Informe o 2 num");
-        valor = in.nextInt();
-
-        if (valor > maiorValor) {
-            maiorValor = valor;
+        switch(operacao) {
+            case "a":
+                int soma = valor1 + valor2;
+                System.out.println("A soma entre os valores é: " + soma);
+                break;
+            case "s":
+                int subtracao = valor1 - valor2;
+                System.out.println("A subtração entre os valores é: " + subtracao);
+                break;
+            case "m":
+                int multiplicacao = valor1 * valor2;
+                System.out.println("A multiplicacao entre os valores é: " + multiplicacao);
+                break;
+            case "d":
+                if (valor2 == 0) {
+                    System.out.println("Não se pode dividir por 0");
+                } else {
+                    double divisao = valor1 / (double) valor2;
+                    System.out.println("A divisão entre os valores é: " + divisao);
+                }
+                break;
+            default:
+                System.out.println("Operação não encontrada");
         }
-
-        if (valor < menorValor) {
-            menorValor = valor;
-        }
-
-        somaDosValores += valor;
-
-        System.out.println("Informe o 3 num");
-        valor = in.nextInt();
-
-        if (valor > maiorValor) {
-            maiorValor = valor;
-        }
-
-        if (valor < menorValor) {
-            menorValor = valor;
-        }
-
-        somaDosValores += valor;
-
-        System.out.println("Informe o 4 num");
-        valor = in.nextInt();
-
-        if (valor > maiorValor) {
-            maiorValor = valor;
-        }
-
-        if (valor < menorValor) {
-            menorValor = valor;
-        }
-
-        somaDosValores += valor;
-
-
-        System.out.println("Informe o 5 num");
-        valor = in.nextInt();
-
-        if (valor > maiorValor) {
-            maiorValor = valor;
-        }
-
-        if (valor < menorValor) {
-            menorValor = valor;
-        }
-
-        somaDosValores += valor;
-
-        System.out.println("Informe o 6 num");
-        valor = in.nextInt();
-
-        if (valor > maiorValor) {
-            maiorValor = valor;
-        }
-
-        if (valor < menorValor) {
-            menorValor = valor;
-        }
-
-        somaDosValores += valor;
-
-        System.out.println("Informe o 7 num");
-        valor = in.nextInt();
-
-        if (valor > maiorValor) {
-            maiorValor = valor;
-        }
-
-        if (valor < menorValor) {
-            menorValor = valor;
-        }
-
-        somaDosValores += valor;
-
-        System.out.println("Informe o 8 num");
-        valor = in.nextInt();
-
-        if (valor > maiorValor) {
-            maiorValor = valor;
-        }
-
-        if (valor < menorValor) {
-            menorValor = valor;
-        }
-
-        somaDosValores += valor;
-
-        System.out.println("Informe o 9 num");
-        valor = in.nextInt();
-
-        if (valor > maiorValor) {
-            maiorValor = valor;
-        }
-
-        if (valor < menorValor) {
-            menorValor = valor;
-        }
-
-        somaDosValores += valor;
-
-        System.out.println("Informe o 10 num");
-        valor = in.nextInt();
-
-        if (valor > maiorValor) {
-            maiorValor = valor;
-        }
-
-        if (valor < menorValor) {
-            menorValor = valor;
-        }
-
-        somaDosValores += valor;
-        System.out.println("O maior valor digitado foi: " + maiorValor);
-        System.out.println("O menor valor digitado foi: " + menorValor);
-
-        System.out.print("A média dos valores é: " + somaDosValores / 10.0);
 
     }
+
 }
